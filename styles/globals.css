@@ -1,0 +1,39 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#__next{
+  height:100%;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  padding:20px;
+  background:#f7f7f8;
+  color:#111;
+}
+.container{max-width:720px;margin:0 auto}
+.note{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff;padding:12px;border-radius:6px;margin-bottom:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
+.form{display:flex;gap:8px;margin-bottom:16px}
+input[type="text"]{flex:1;padding:8px;border-radius:6px;border:1px solid #ddd}
+button{padding:8px 12px;border-radius:6px;border:none;background:#2563eb;color:#fff}
+button:disabled{cursor:not-allowed;opacity:.55}
+.error{padding:12px;margin-bottom:16px;border:1px solid #fecaca;border-radius:6px;background:#fef2f2;color:#991b1b}
+.note-content{min-width:0;flex:1}
+.note-title{display:flex;align-items:center;gap:10px;cursor:pointer}
+.note-title span{overflow-wrap:anywhere}
+.note-completed .note-title span{text-decoration:line-through;color:#6b7280}
+.date{margin-top:5px;font-size:12px;color:#666}
+.actions{display:flex;gap:6px}
+.secondary{background:#e5e7eb;color:#111827}
+.danger{background:#dc2626}
+.edit-form{display:flex;gap:8px;width:100%}
+
+@media (max-width: 520px){
+  .note{align-items:flex-start;flex-direction:column}
+  .actions{width:100%}
+  .actions button{flex:1}
+  .edit-form{flex-wrap:wrap}
+  .edit-form input{flex-basis:100%}
+}
