@@ -1,7 +1,7 @@
-import { AddNoteForm } from '../components/AddNoteForm';
-import { NoteItem } from '../components/NoteItem';
-import { useNotes } from '../hooks/useNotes';
-import { getNoteId } from '../types/note';
+import { AddNoteForm } from '@/components/AddNoteForm';
+import { NoteItem } from '@/components/NoteItem';
+import { useNotes } from '@/hooks/useNotes';
+import { getNoteId } from '@/types/note';
 
 export default function Home() {
   const {

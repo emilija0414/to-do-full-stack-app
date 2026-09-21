@@ -1,4 +1,4 @@
-import type { Note, NoteChanges } from '../types/note';
+import type { Note, NoteChanges } from '@/types/note';
 
 const notesEndpoint = '/api/notes';
 

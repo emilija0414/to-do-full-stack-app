@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { getNoteId, type Note, type NoteChanges } from '../types/note';
+import { getNoteId, type Note, type NoteChanges } from '@/types/note';
 
 type NoteItemProps = {
   note: Note;

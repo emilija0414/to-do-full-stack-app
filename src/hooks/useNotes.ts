@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
-import { createNote, fetchNotes, patchNote, removeNote } from '../services/notesApi';
-import { getNoteId, type Note, type NoteChanges } from '../types/note';
+import { createNote, fetchNotes, patchNote, removeNote } from '@/services/notesApi';
+import { getNoteId, type Note, type NoteChanges } from '@/types/note';
 
 function errorMessage(error: unknown, fallback: string) {
   return error instanceof Error ? error.message : fallback;
